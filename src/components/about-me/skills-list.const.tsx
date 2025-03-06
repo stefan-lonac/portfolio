@@ -1,5 +1,5 @@
 import { ElementType } from 'react'
-import { BsFiletypeJson } from 'react-icons/bs'
+import { BsFiletypeJson, BsFiletypeScss } from 'react-icons/bs'
 import { HiWrenchScrewdriver } from 'react-icons/hi2'
 import { LiaLaptopCodeSolid } from 'react-icons/lia'
 import { MdDisplaySettings } from 'react-icons/md'
@@ -8,6 +8,7 @@ import {
   SiAngular,
   SiComposer,
   SiDocker,
+  SiElementor,
   SiGit,
   SiGithub,
   SiGitlab,
@@ -25,7 +26,7 @@ import {
 } from 'react-icons/si'
 import { TbSettingsCode } from 'react-icons/tb'
 
-export interface Skills {
+interface Skills {
   category:
     | 'Frontend'
     | 'Backend and Database'
@@ -36,7 +37,7 @@ export interface Skills {
   skills: SkillsList[]
 }
 
-export interface SkillsList {
+interface SkillsList {
   title: string
   icon: ElementType | null
 }
@@ -79,6 +80,10 @@ export const SKILLS_LIST: Skills[] = [
         icon: SiTypescript,
       },
       {
+        title: 'SCSS',
+        icon: BsFiletypeScss,
+      },
+      {
         title: 'RxJs',
         icon: SiReactivex,
       },
@@ -113,6 +118,10 @@ export const SKILLS_LIST: Skills[] = [
       {
         title: 'LearnDash',
         icon: null,
+      },
+      {
+        title: 'Elementor',
+        icon: SiElementor,
       },
     ],
   },
