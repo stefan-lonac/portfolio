@@ -14,9 +14,9 @@ export const NAVIGATION_DATA: NavigationItem[] = [
     icon: SlHome,
   },
   {
-    title: 'Contact',
-    url: '#Contact',
-    icon: SlEnvolope,
+    title: 'About me',
+    url: '#AboutMe',
+    icon: SlUser,
   },
   {
     title: 'Projects',
@@ -24,8 +24,8 @@ export const NAVIGATION_DATA: NavigationItem[] = [
     icon: SlBriefcase,
   },
   {
-    title: 'About me',
-    url: '#AboutMe',
-    icon: SlUser,
+    title: 'Contact',
+    url: '#Contact',
+    icon: SlEnvolope,
   },
 ]
