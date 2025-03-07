@@ -49,7 +49,7 @@ function AboutMe() {
                   const IconComponent = skill.icon
                   return (
                     <div
-                      className="flex items-center gap-2 transition-all px-3 py-2 rounded-2xl dark:border-none bg-stone-100 hover:bg-stone-200 text-stone-900 dark:text-stone-50 dark:bg-slate-700 dark:hover:bg-cyan-800"
+                      className="flex items-center gap-2 transition-all px-3 py-2 rounded-2xl dark:border-none bg-stone-100 hover:bg-stone-200 text-stone-900 dark:text-stone-50 dark:bg-slate-700 dark:hover:bg-cyan-800 animate-fade-in"
                       key={index}
                     >
                       {IconComponent && (

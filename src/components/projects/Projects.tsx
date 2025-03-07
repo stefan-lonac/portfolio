@@ -21,7 +21,7 @@ function Projects() {
 
   return (
     <section className="projects max-w-5xl mx-auto py-20" id="Projects">
-      <div className="flex flex-col items-center justify-center gap-6 mb-12">
+      <div className="flex flex-col items-center justify-center gap-16 mb-12">
         <div className="flex items-center gap-2">
           <GoProjectRoadmap
             size={32}
@@ -31,7 +31,7 @@ function Projects() {
             Projects
           </h2>
         </div>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 justify-center max-w-4xl mx-auto">
           <button
             className="flex items-center gap-2 transition-all px-3 py-2 rounded-2xl dark:border-none bg-stone-100 hover:bg-stone-200 text-stone-900 dark:text-stone-50 dark:bg-slate-700 dark:hover:bg-cyan-800"
             onClick={useFilterReset}
@@ -44,7 +44,7 @@ function Projects() {
             const IconComponent = tech.icon
             return (
               <button
-                className="flex items-center gap-2 transition-all px-3 py-2 rounded-2xl dark:border-none bg-stone-100 hover:bg-stone-200 text-stone-900 dark:text-stone-50 dark:bg-slate-700 dark:hover:bg-cyan-800"
+                className="flex items-center gap-2 transition-all px-3 py-2 rounded-2xl dark:border-none bg-stone-100 hover:bg-stone-200 text-stone-900 dark:text-stone-50 dark:bg-slate-700 dark:hover:bg-cyan-800 animate-fade-in"
                 key={tech.title}
                 onClick={() => useFilter(tech.title)}
               >
