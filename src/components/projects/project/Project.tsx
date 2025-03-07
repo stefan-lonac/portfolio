@@ -23,7 +23,7 @@ function Project({ filter }: ProjectProps) {
         return (
           <article
             key={project.title}
-            className="flex flex-col bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden animate-fade-in"
+            className="flex flex-col bg-white dark:bg-gray-900 hover:shadow-xl rounded-lg shadow-lg overflow-hidden animate-fade-in transition-all"
           >
             <div className="flex items-center justify-center aspect-video bg-gray-100 dark:bg-gray-800">
               {IconComponent && (
@@ -41,7 +41,7 @@ function Project({ filter }: ProjectProps) {
               <p className="text-stone-900 dark:text-stone-300">
                 {project.excerpt}
               </p>
-              <div className="flex gap-2 flex-wrap">
+              <div className="flex gap-3 flex-wrap">
                 {project.technologies.map((tech) => {
                   const IconComponent = tech.icon
                   return (
