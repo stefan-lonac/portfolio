@@ -17,7 +17,7 @@ function Project({ filter }: ProjectProps) {
         )
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {projectsData.map((project) => {
         const IconComponent = project.img
         return (
@@ -25,7 +25,7 @@ function Project({ filter }: ProjectProps) {
             key={project.title}
             className="flex flex-col bg-white dark:bg-gray-900 hover:shadow-xl rounded-lg shadow-lg overflow-hidden animate-fade-in transition-all"
           >
-            <div className="flex items-center justify-center aspect-video bg-gray-100 dark:bg-gray-800">
+            <div className="flex items-center justify-center aspect-[16/6] md:aspect-[16/12] bg-gray-100 dark:bg-gray-800">
               {IconComponent && (
                 <IconComponent
                   size="100"
