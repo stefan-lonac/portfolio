@@ -5,6 +5,7 @@ import ThemeToggle from '../themeToggle/ThemeToggle'
 import './Header.css'
 import MobileNav from './mobile-navigation/MobileNav'
 import { NAVIGATION_DATA } from './navigation.const'
+import Logo from '../../assets/img/logo.png'
 
 function Header() {
   const headerRef = useRef<HTMLElement>(null)
@@ -39,7 +40,7 @@ function Header() {
       className="header-container z-50 w-full fixed transition-all bg-stone-50 dark:bg-gray-800 shadow-lg flex items-center justify-between flex-row"
     >
       <a className="text-gray-800 dark:text-stone-50" href="#">
-        <img className="logo" src="./src/assets/img/logo.png" alt="Logo" />
+        <img className="logo" src={Logo} alt="Logo" />
       </a>
       <nav className="hidden md:block">
         <ul className="flex gap-10">

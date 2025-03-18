@@ -2,6 +2,7 @@ import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { IoMailOutline } from 'react-icons/io5'
 import { ScrollViewComponent } from '../shared/ScrollViewComponent'
+import ProfilePicture from '../../assets/img/profile-picture.jpg'
 
 function Information() {
   const { ref, isVisible } = ScrollViewComponent()
@@ -17,7 +18,7 @@ function Information() {
       <div className="">
         <div className="relative aspect-square w-64 mx-auto ">
           <img
-            src="./src/assets/img/profile-picture.jpg"
+            src={ProfilePicture}
             alt="Profile Picture"
             className="w-full h-full object-cover rounded-full border-4 border-android-light dark:border-python-light shadow-imgShadow"
           />
