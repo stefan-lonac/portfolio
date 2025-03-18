@@ -1,6 +1,6 @@
 import { ElementType } from 'react'
 import { GoProjectRoadmap } from 'react-icons/go'
-import { SlBriefcase, SlEnvolope, SlHome, SlUser } from 'react-icons/sl'
+import { SlBriefcase, SlHome, SlUser } from 'react-icons/sl'
 
 export interface NavigationItem {
   title: string
@@ -28,10 +28,5 @@ export const NAVIGATION_DATA: NavigationItem[] = [
     title: 'Career',
     url: '#Career',
     icon: SlBriefcase,
-  },
-  {
-    title: 'Contact',
-    url: '#Contact',
-    icon: SlEnvolope,
   },
 ]

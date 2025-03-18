@@ -6,6 +6,13 @@ interface PersonalCareerType {
   jobDescription: Array<string>
 }
 
+interface EducationType {
+  title: string
+  eduType: string
+  graduate: string
+  date: string
+}
+
 export const PERSONAL_CAREER: PersonalCareerType[] = [
   {
     title: 'Frontend Developer',
@@ -56,5 +63,15 @@ export const PERSONAL_CAREER: PersonalCareerType[] = [
       'Delivered tailored WordPress websites and WooCommerce shops, including a shop for adult diapers.',
       'Built web applications using PHP, SQL, JavaScript, and Vue.js, including simple CRUD systems.',
     ],
+  },
+]
+
+export const EDUCATION: EducationType[] = [
+  {
+    title:
+      'The School of Electrical and Computer Engineering of Applied Studies',
+    eduType: 'Higher Education',
+    graduate: 'New computer technologies',
+    date: 'October 2018 - April 2020',
   },
 ]

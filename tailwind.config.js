@@ -13,6 +13,10 @@ export default {
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
       },
+      boxShadow: {
+        imgShadow:
+          '-5px -5px 40px -15px #06b6d4, -5px -5px 40px -15px #4f46e5 ',
+      },
     },
     screens: {
       xs: '425px',

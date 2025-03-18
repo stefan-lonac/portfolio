@@ -2,8 +2,11 @@ import { useState } from 'react'
 import { GoProjectRoadmap } from 'react-icons/go'
 import Project from './project/Project'
 import { PROJECT_LIST } from './project/project.const'
+import { ScrollViewComponent } from '../shared/ScrollViewComponent'
 
 function Projects() {
+  const { ref, isVisible } = ScrollViewComponent()
+
   const [filter, setFilter] = useState<string>('All')
 
   const useFilter = (value: string) => {
@@ -20,7 +23,13 @@ function Projects() {
   ]
 
   return (
-    <section className="projects max-w-5xl mx-auto py-20" id="Projects">
+    <section
+      ref={ref}
+      className={`projects max-w-5xl mx-auto py-20 transition-all	duration-1000 ${
+        isVisible ? 'opacity-100' : 'opacity-0'
+      }`}
+      id="Projects"
+    >
       <div className="flex flex-col items-center justify-center gap-16 mb-12">
         <div className="flex items-center gap-2">
           <GoProjectRoadmap
