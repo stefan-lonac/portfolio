@@ -1,19 +1,25 @@
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { IoMailOutline } from 'react-icons/io5'
+import { ScrollViewComponent } from '../shared/ScrollViewComponent'
 
 function Information() {
+  const { ref, isVisible } = ScrollViewComponent()
+
   return (
     <section
-      className="flex justify-center items-center min-h-screen md:flex-row flex-col gap-10"
+      ref={ref}
+      className={`flex justify-center items-center min-h-screen md:flex-row flex-col gap-10 transition-all	duration-1000 ${
+        isVisible ? 'opacity-100' : 'opacity-0'
+      }`}
       id="Home"
     >
       <div className="">
-        <div className="relative aspect-square w-64 mx-auto">
+        <div className="relative aspect-square w-64 mx-auto ">
           <img
             src="./src/assets/img/profile-picture.jpg"
             alt="Profile Picture"
-            className="w-full h-full object-cover rounded-full border-4 border-android-light dark:border-python-light shadow-xl"
+            className="w-full h-full object-cover rounded-full border-4 border-android-light dark:border-python-light shadow-imgShadow"
           />
         </div>
       </div>

@@ -1,10 +1,19 @@
 import { GoPerson } from 'react-icons/go'
 import { TbFileDownload } from 'react-icons/tb'
 import { SKILLS_LIST } from './skills-list.const'
+import { ScrollViewComponent } from '../shared/ScrollViewComponent'
 
 function AboutMe() {
+  const { ref, isVisible } = ScrollViewComponent()
+
   return (
-    <section className="about-me max-w-4xl mx-auto py-20" id="AboutMe">
+    <section
+      ref={ref}
+      className={`about-me max-w-4xl mx-auto py-20 transition-all	duration-1000 ${
+        isVisible ? 'opacity-100' : 'opacity-0'
+      }`}
+      id="AboutMe"
+    >
       <div className="flex flex-col items-center justify-center gap-6 mb-12">
         <div className="flex items-center gap-2">
           <GoPerson size={32} className="text-indigo-600 dark:text-cyan-500" />
