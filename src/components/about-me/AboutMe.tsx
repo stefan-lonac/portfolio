@@ -2,6 +2,7 @@ import { GoPerson } from 'react-icons/go'
 import { TbFileDownload } from 'react-icons/tb'
 import { SKILLS_LIST } from './skills-list.const'
 import { ScrollViewComponent } from '../shared/ScrollViewComponent'
+import Portfolio from '../../assets/cv/Stefan Lončarić CV.pdf'
 
 function AboutMe() {
   const { ref, isVisible } = ScrollViewComponent()
@@ -29,7 +30,7 @@ function AboutMe() {
           environments.
         </p>
         <a
-          href="./src/assets/cv/Stefan Lončarić CV.pdf"
+          href={Portfolio}
           target="_blank"
           className="flex justify-center items-center gap-2 text-md font-medium leading-4 transition-all p-3 rounded-md border-stone-900 border border-solid dark:border-none hover:bg-stone-200  text-stone-900 dark:text-stone-50 dark:bg-slate-700 dark:hover:bg-cyan-800"
         >
