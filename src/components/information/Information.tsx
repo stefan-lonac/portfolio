@@ -10,7 +10,7 @@ function Information() {
   return (
     <section
       ref={ref}
-      className={`flex justify-center items-center min-h-screen md:flex-row flex-col gap-10 transition-all	duration-1000 ${
+      className={`flex justify-center items-center min-h-screen md:flex-row flex-col gap-10 transition-all duration-1000 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       id="Home"
