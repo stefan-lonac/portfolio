@@ -15,22 +15,38 @@ interface EducationType {
 
 export const PERSONAL_CAREER: PersonalCareerType[] = [
   {
+    title: 'Full Stack Web Developer',
+    jobType: 'Full time',
+    company: 'Oversee',
+    date: 'June 2025 - Present',
+    jobDescription: [
+      'Architected and delivered a custom Property Management Portal end-to-end, covering both frontend and backend workflows.',
+      'Developed custom WordPress themes and OOP-based plugins using an ACF-driven architecture and REST APIs.',
+      'Implemented secure authentication systems including custom login, registration, and role-based access control.',
+      'Integrated external CRM and booking APIs with secure and reliable data synchronization.',
+      'Built interactive Google Maps features with external property and unit data, including advanced filtering and map-based interactions.',
+      'Managed and integrated Google Cloud services and APIs such as Maps, Vision API, Calendar, and Sheets/Excel automation.',
+      'Designed and developed admin dashboards with complex business workflows, including leasing, maintenance, and reservation management.',
+      'Optimized application performance for large datasets using AJAX, pagination, and server-side filtering techniques.',
+    ],
+  },
+  {
     title: 'Frontend Developer',
     jobType: 'Full time',
     company: 'Consulteer',
     date: 'Mar 2022 - Jan 2025',
     jobDescription: [
-      'Developed and maintained Angular-based web applications.',
-      'Integrated REST APIs and leveraged RxJS for reactive programming.',
-      'Used Docker for containerized deployments.',
-      'Developed custom features like a chat system using Vanilla JavaScript, HTML, CSS, and Grunt preprocessors.',
-      'Managed version control and CI/CD workflows using GitLab for Angular projects.',
-      'Created reusable components, optimized performance, and ensured smooth integration.',
-      'Debugged and resolved complex issues to enhance user experience.',
+      'Developed and maintained Angular web applications with a strong focus on performance, scalability, and clean architecture.',
+      'Integrated REST APIs and implemented reactive data flows using RxJS.',
+      'Built reusable and modular UI components to ensure consistency and maintainability across applications.',
+      'Implemented custom features such as real-time chat systems using Vanilla JavaScript, HTML, and CSS, with Grunt used for preprocessing.',
+      'Managed containerized deployments using Docker and handled version control and CI/CD pipelines with GitLab.',
+      'Worked on multiple production-grade applications, including healthcare platforms with video calls and document sharing, vacation management tools for team coordination, and taxi applications with real-time booking and route management.',
+      'Debugged and resolved complex frontend issues, significantly improving overall user experience and application stability.',
     ],
   },
   {
-    title: 'Full Stack Developer',
+    title: 'Full Stack Web Developer',
     jobType: 'Full time',
     company: 'Utopia Tech',
     date: 'Jul 2020 - Mar 2022',
@@ -43,7 +59,7 @@ export const PERSONAL_CAREER: PersonalCareerType[] = [
     ],
   },
   {
-    title: 'Full Stack Developer',
+    title: 'Full Stack Web Developer',
     jobType: 'Full time',
     company: 'Mediavuk d.o.o',
     date: 'Mar 2018 - Jul 2020',
@@ -53,6 +69,7 @@ export const PERSONAL_CAREER: PersonalCareerType[] = [
       'Built web applications using PHP, SQL, JavaScript, and Vue.js, including simple CRUD systems.',
     ],
   },
+
   {
     title: 'Full Stack Developer',
     company: 'Private clients',

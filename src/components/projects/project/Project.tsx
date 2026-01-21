@@ -23,7 +23,7 @@ function Project({ filter }: ProjectProps) {
         return (
           <article
             key={project.title}
-            className="flex flex-col bg-white dark:bg-gray-900 hover:shadow-xl rounded-lg shadow-lg overflow-hidden animate-fade-in transition-all"
+            className="flex flex-col bg-white dark:bg-gray-900 shadow-[0_0_10px_0_rgba(0,0,0,0.3)] dark:shadow-gray-900 dark:hover:shadow-blue-500/50 hover:shadow-blue-500/50 rounded-lg overflow-hidden animate-fade-in transition-all duration-300 ease-in-out"
           >
             <div className="flex items-center justify-center aspect-[16/6] md:aspect-[16/12] bg-gray-100 dark:bg-gray-800">
               {IconComponent && (
