@@ -5,9 +5,14 @@ import {
   SiAngular,
   SiChatbot,
   SiElementor,
+  SiGooglecloud,
+  SiGooglemaps,
+  SiHostinger,
   SiJavascript,
   SiJquery,
   SiPhp,
+  SiPostman,
+  SiWoo,
   SiWordpress,
 } from 'react-icons/si'
 
@@ -123,7 +128,7 @@ export const PROJECT_LIST: ProjectList[] = [
     linkDemo: '',
     technologies: [
       {
-        title: 'Wordpress',
+        title: 'WordPress',
         icon: SiWordpress,
       },
       {
@@ -137,6 +142,130 @@ export const PROJECT_LIST: ProjectList[] = [
       {
         title: 'JQuery',
         icon: SiJquery,
+      },
+    ],
+  },
+  {
+    title: 'Kreston MDM EduTech',
+    excerpt:
+      'A feature-rich e-learning platform with WooCommerce integration, multi-contributor course support, and a custom Elementor course slider for an engaging learning experience.',
+    img: SiWordpress,
+    linkCode: '',
+    linkDemo: 'https://www.mdmedu.tech/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'WooCommerce',
+        icon: SiWoo,
+      },
+      {
+        title: 'Elementor',
+        icon: SiElementor,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+    ],
+  },
+  {
+    title: 'Trasferne cene',
+    excerpt:
+      'A professional business website focused on presenting services and content through custom-built Elementor widgets and interactive popups.',
+    img: SiWordpress,
+    linkCode: '',
+    linkDemo: 'https://transfernecene.rs/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'Elementor',
+        icon: SiElementor,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+    ],
+  },
+  {
+    title: 'Oversee',
+    excerpt:
+      'A full-featured property management platform designed to manage properties, units, tenants, leasing, maintenance, and reservations through a centralized admin system.',
+    img: SiWordpress,
+    linkCode: '',
+    linkDemo: 'https://oversee.us/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+      {
+        title: 'REST API',
+        icon: SiPostman,
+      },
+      {
+        title: 'Google Maps API',
+        icon: SiGooglemaps,
+      },
+      {
+        title: 'Google Cloud',
+        icon: SiGooglecloud,
+      },
+    ],
+  },
+  {
+    title: 'Amrein Properties',
+    excerpt:
+      'Real estate website with property listings synchronized from two different CRM systems, enhanced with custom Elementor solutions and interactive map-based property browsing, multi-language implementation for the built-in property system',
+    img: SiWordpress,
+    linkCode: '',
+    linkDemo: 'http://amreinproperties.com/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'Elementor',
+        icon: SiElementor,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+      {
+        title: 'Google Maps API',
+        icon: SiGooglemaps,
+      },
+      {
+        title: 'Hostinger',
+        icon: SiHostinger,
       },
     ],
   },
