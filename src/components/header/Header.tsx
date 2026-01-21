@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { IoCloseOutline } from 'react-icons/io5'
 import { RxHamburgerMenu } from 'react-icons/rx'
+import Logo from '../../assets/img/logo.png'
 import ThemeToggle from '../themeToggle/ThemeToggle'
 import './Header.css'
 import MobileNav from './mobile-navigation/MobileNav'
 import { NAVIGATION_DATA } from './navigation.const'
-import Logo from '../../assets/img/logo.png'
 
 function Header() {
   const headerRef = useRef<HTMLElement>(null)
