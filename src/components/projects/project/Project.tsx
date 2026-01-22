@@ -3,22 +3,13 @@ import { SiGithub } from 'react-icons/si'
 import { PROJECT_LIST } from './project.const'
 
 interface ProjectProps {
-  filter: string
+  data: typeof PROJECT_LIST
 }
 
-function Project({ filter }: ProjectProps) {
-  const projectsData =
-    filter === 'All'
-      ? PROJECT_LIST
-      : PROJECT_LIST.filter((filterData) =>
-          filterData.technologies.some(
-            (projectFilter) => projectFilter.title === filter
-          )
-        )
-
+function Project({ data }: ProjectProps) {
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {projectsData.map((project) => {
+      {data.map((project) => {
         const IconComponent = project.img
         return (
           <article

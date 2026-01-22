@@ -12,8 +12,10 @@ import {
   SiJquery,
   SiPhp,
   SiPostman,
+  SiTypescript,
   SiWoo,
   SiWordpress,
+  SiWpengine,
 } from 'react-icons/si'
 
 interface ProjectTechnologies {
@@ -51,6 +53,10 @@ export const PROJECT_LIST: ProjectList[] = [
         title: 'JavaScript',
         icon: SiJavascript,
       },
+      {
+        title: 'TypeScript',
+        icon: SiTypescript,
+      },
     ],
   },
   {
@@ -73,6 +79,10 @@ export const PROJECT_LIST: ProjectList[] = [
         title: 'JavaScript',
         icon: SiJavascript,
       },
+      {
+        title: 'TypeScript',
+        icon: SiTypescript,
+      },
     ],
   },
   {
@@ -94,6 +104,10 @@ export const PROJECT_LIST: ProjectList[] = [
       {
         title: 'JavaScript',
         icon: SiJavascript,
+      },
+      {
+        title: 'TypeScript',
+        icon: SiTypescript,
       },
     ],
   },
@@ -202,6 +216,41 @@ export const PROJECT_LIST: ProjectList[] = [
     ],
   },
   {
+    title: 'Kreston MDM',
+    excerpt:
+      'Corporate WordPress website for a professional advisory and accounting firm, featuring custom integrations, interactive UI elements, and continuous feature development.',
+    img: SiWordpress,
+    linkCode: '',
+    linkDemo: 'https://krestonmdm.com/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'Elementor',
+        icon: SiElementor,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+      {
+        title: 'Google Maps API',
+        icon: SiGooglemaps,
+      },
+      {
+        title: 'REST API',
+        icon: SiPostman,
+      },
+    ],
+  },
+
+  {
     title: 'Oversee',
     excerpt:
       'A full-featured property management platform designed to manage properties, units, tenants, leasing, maintenance, and reservations through a centralized admin system.',
@@ -232,6 +281,10 @@ export const PROJECT_LIST: ProjectList[] = [
       {
         title: 'Google Cloud',
         icon: SiGooglecloud,
+      },
+      {
+        title: 'WP Engine',
+        icon: SiWpengine,
       },
     ],
   },
