@@ -1,32 +1,18 @@
 import { useEffect, useState } from 'react'
 import { GoProjectRoadmap } from 'react-icons/go'
-import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md'
 import { ScrollViewComponent } from '../shared/ScrollViewComponent'
 import Project from './project/Project'
 import { PROJECT_LIST } from './project/project.const'
+import ProjectsPagination from './ProjectsPagination'
 
 export const ITEMS_PER_PAGE = 6
-export const LOAD_STEP = 3
 
 function Projects() {
-  // const [visibilityCount, setVisibilityCount] = useState(ITEMS_PER_PAGE)
   const [filter, setFilter] = useState<string>('All')
   const [activeFilter, setActiveFilter] = useState<string>('All')
   const [currentPage, setCurrentPage] = useState<number>(1)
 
   const { ref, isVisible } = ScrollViewComponent()
-
-  // const loadMoreHandler = () => {
-  //   setVisibilityCount((prevCount) =>
-  //     Math.min(prevCount + LOAD_STEP, totalProjects)
-  //   )
-  // }
-
-  // const loadLessHandler = () => {
-  //   setVisibilityCount((prevCount) =>
-  //     Math.max(prevCount - LOAD_STEP, ITEMS_PER_PAGE)
-  //   )
-  // }
 
   const setFilterHandler = (value: string) => {
     setFilter(value)
@@ -131,44 +117,11 @@ function Projects() {
 
         <Project data={paginatedProjects} />
 
-        <div>
-          <div className="flex items-center gap-2 mt-2 justify-center">
-            {/* Previous */}
-            <button
-              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
-              disabled={currentPage === 1}
-              className="px-3 py-1 rounded-lg disabled:opacity-40"
-            >
-              <MdArrowBackIos className="fill-gray-900 dark:fill-white" />
-            </button>
-
-            {/* Page numbers */}
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-              <button
-                key={page}
-                onClick={() => setCurrentPage(page)}
-                className={`px-3 py-1 rounded-lg ${
-                  page === currentPage
-                    ? 'bg-gray-900  text-white'
-                    : 'bg-stone-100'
-                }`}
-              >
-                {page}
-              </button>
-            ))}
-
-            {/* Next */}
-            <button
-              onClick={() =>
-                setCurrentPage((page) => Math.min(page + 1, totalPages))
-              }
-              disabled={currentPage === totalPages}
-              className="px-3 py-1 rounded-lg disabled:opacity-40 text-black"
-            >
-              <MdArrowForwardIos className="fill-gray-900 dark:fill-white" />
-            </button>
-          </div>
-        </div>
+        <ProjectsPagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
     </section>
   )
