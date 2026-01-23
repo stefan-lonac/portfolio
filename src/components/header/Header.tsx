@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 import Logo from '../../assets/img/logo.png'
 import ThemeToggle from '../themeToggle/ThemeToggle'
 import './Header.css'
+import NavItemPage from './menu/NavItemPage'
 import MobileNav from './mobile-navigation/MobileNav'
 import { NAVIGATION_DATA } from './navigation.const'
 
@@ -45,19 +46,7 @@ function Header() {
       <nav className="hidden md:block">
         <ul className="flex gap-10">
           {NAVIGATION_DATA.map((data, index) => {
-            const IconComponent = data.icon
-
-            return (
-              <li key={index} className="group">
-                <a
-                  href={data.url}
-                  className="flex gap-2 items-center text-gray-800 transition-colors group-hover:text-cyan-500 dark:text-stone-50"
-                >
-                  <IconComponent />
-                  {data.title}
-                </a>
-              </li>
-            )
+            return <NavItemPage data={data} index={index} />
           })}
         </ul>
       </nav>
