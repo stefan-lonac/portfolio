@@ -11,12 +11,23 @@ function ProjectsPagination({
   totalPages,
   setCurrentPage,
 }: ProjectsPaginationProps) {
+  const handlePageChange = (page: any) => {
+    setCurrentPage(page)
+    const projectsList = document.getElementById('projectsLst')
+    if (!projectsList) return
+
+    const elementTop =
+      projectsList.getBoundingClientRect().top + window.scrollY - 180
+
+    window.scrollTo({ behavior: 'smooth', top: elementTop })
+  }
+
   return (
     <div className="pagination">
       <div className="flex items-stretch gap-2 mt-2 justify-center">
         {/* Previous */}
         <button
-          onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+          onClick={() => handlePageChange((p: number) => Math.max(p - 1, 1))}
           disabled={currentPage === 1}
           className="px-3 py-1 rounded-lg disabled:opacity-40"
         >
@@ -27,11 +38,11 @@ function ProjectsPagination({
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <button
             key={page}
-            onClick={() => setCurrentPage(page)}
+            onClick={() => handlePageChange(page)}
             className={`px-3 py-1 rounded-lg ${
               page === currentPage
-                ? 'bg-gray-100  text-stone-900'
-                : 'bg-stone-900 text-gray-100'
+                ? 'text-gray-100 bg-stone-900  dark:bg-gray-100  dark:text-stone-900'
+                : 'text-stone-900 bg-gray-100  dark:bg-stone-900 dark:text-gray-100'
             }`}
           >
             {page}
@@ -41,7 +52,7 @@ function ProjectsPagination({
         {/* Next */}
         <button
           onClick={() =>
-            setCurrentPage((page) => Math.min(page + 1, totalPages))
+            handlePageChange((page: number) => Math.min(page + 1, totalPages))
           }
           disabled={currentPage === totalPages}
           className="px-3 py-1 rounded-lg disabled:opacity-40 text-black"
