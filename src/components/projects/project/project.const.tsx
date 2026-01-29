@@ -163,7 +163,7 @@ export const PROJECT_LIST: ProjectList[] = [
     title: 'Kreston MDM EduTech',
     excerpt:
       'A feature-rich e-learning platform with WooCommerce integration, multi-contributor course support, and a custom Elementor course slider for an engaging learning experience.',
-    img: SiWordpress,
+    img: SiWoo,
     linkCode: '',
     linkDemo: 'https://www.mdmedu.tech/',
     technologies: [
@@ -186,6 +186,10 @@ export const PROJECT_LIST: ProjectList[] = [
       {
         title: 'JavaScript',
         icon: SiJavascript,
+      },
+      {
+        title: 'JQuery',
+        icon: SiJquery,
       },
     ],
   },
@@ -212,6 +216,10 @@ export const PROJECT_LIST: ProjectList[] = [
       {
         title: 'JavaScript',
         icon: SiJavascript,
+      },
+      {
+        title: 'JQuery',
+        icon: SiJquery,
       },
     ],
   },
@@ -246,6 +254,10 @@ export const PROJECT_LIST: ProjectList[] = [
       {
         title: 'REST API',
         icon: SiPostman,
+      },
+      {
+        title: 'JQuery',
+        icon: SiJquery,
       },
     ],
   },
@@ -286,6 +298,10 @@ export const PROJECT_LIST: ProjectList[] = [
         title: 'WP Engine',
         icon: SiWpengine,
       },
+      {
+        title: 'JQuery',
+        icon: SiJquery,
+      },
     ],
   },
   {
@@ -319,6 +335,104 @@ export const PROJECT_LIST: ProjectList[] = [
       {
         title: 'Hostinger',
         icon: SiHostinger,
+      },
+      {
+        title: 'JQuery',
+        icon: SiJquery,
+      },
+    ],
+  },
+  {
+    title: 'Poofnice - WooCommerce E-commerce Shop',
+    excerpt:
+      'WooCommerce shop developed with WordPress and Elementor, including bespoke product features, shop logic, and UI enhancements tailored to client needs.',
+    img: SiWoo,
+    linkCode: '',
+    linkDemo: 'https://poofnice.com/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'WooCommerce',
+        icon: SiWoo,
+      },
+      {
+        title: 'Elementor',
+        icon: SiElementor,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+    ],
+  },
+  {
+    title: 'inko-versand - E-commerce Shop',
+    excerpt:
+      'A custom-built WooCommerce e-commerce website developed with a bespoke WordPress theme, advanced ACF usage, and tailored checkout and payment workflows.',
+    img: SiWoo,
+    linkCode: '',
+    linkDemo: 'http://inko-versand.com/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'WooCommerce',
+        icon: SiWoo,
+      },
+      {
+        title: 'ACF',
+        icon: SiWordpress,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+      {
+        title: 'JQuery',
+        icon: SiJquery,
+      },
+    ],
+  },
+  {
+    title: 'Mediavuk',
+    excerpt:
+      'A custom-designed WordPress website built with a bespoke theme and ACF-driven content structure, focused on performance, flexibility, and clean presentation of business content.',
+    img: SiWordpress,
+    linkCode: '',
+    linkDemo: 'https://mediavuk.com/',
+    technologies: [
+      {
+        title: 'WordPress',
+        icon: SiWordpress,
+      },
+      {
+        title: 'ACF',
+        icon: SiWordpress,
+      },
+      {
+        title: 'PHP',
+        icon: SiPhp,
+      },
+      {
+        title: 'JavaScript',
+        icon: SiJavascript,
+      },
+      {
+        title: 'jQuery',
+        icon: SiJquery,
       },
     ],
   },
