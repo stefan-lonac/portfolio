@@ -46,7 +46,7 @@ function Header() {
       <nav className="hidden md:block">
         <ul className="flex gap-10">
           {NAVIGATION_DATA.map((data, index) => {
-            return <NavItemPage data={data} index={index} />
+            return <NavItemPage data={data} key={index} index={index} />
           })}
         </ul>
       </nav>

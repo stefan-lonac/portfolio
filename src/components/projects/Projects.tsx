@@ -31,7 +31,6 @@ function Projects() {
     'JavaScript',
     'TypeScript',
     'PHP',
-    'jQuery',
   ]
 
   const filterProjectList = [

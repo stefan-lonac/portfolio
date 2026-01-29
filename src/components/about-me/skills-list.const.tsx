@@ -1,5 +1,5 @@
 import { ElementType } from 'react'
-import { BsFiletypeJson, BsFiletypeScss } from 'react-icons/bs'
+import { BsFiletypeJson, BsFiletypeScss, BsPlugin } from 'react-icons/bs'
 import { HiWrenchScrewdriver } from 'react-icons/hi2'
 import { LiaLaptopCodeSolid } from 'react-icons/lia'
 import { MdDisplaySettings } from 'react-icons/md'
@@ -13,10 +13,13 @@ import {
   SiGithub,
   SiGitlab,
   SiGrunt,
+  SiHostinger,
   SiJavascript,
   SiJquery,
   SiMysql,
   SiPhp,
+  SiPostgresql,
+  SiPostman,
   SiReact,
   SiReactivex,
   SiTailwindcss,
@@ -24,7 +27,7 @@ import {
   SiWoocommerce,
   SiWordpress,
 } from 'react-icons/si'
-import { TbSettingsCode } from 'react-icons/tb'
+import { TbApi, TbCloudCode, TbServer, TbSettingsCode } from 'react-icons/tb'
 
 interface Skills {
   category:
@@ -33,6 +36,7 @@ interface Skills {
     | 'Platforms'
     | 'Utilities'
     | 'Soft Skills'
+    | 'APIs & Infrastructure'
   icon: ElementType | null
   skills: SkillsList[]
 }
@@ -101,8 +105,43 @@ export const SKILLS_LIST: Skills[] = [
         title: 'MySQL',
         icon: SiMysql,
       },
+      {
+        title: 'PostgreSQL',
+        icon: SiPostgresql,
+      },
     ],
   },
+  {
+    category: 'APIs & Infrastructure',
+    icon: TbCloudCode,
+    skills: [
+      {
+        title: 'REST API Integration',
+        icon: SiPostman,
+      },
+      {
+        title: 'Custom API Development',
+        icon: TbApi,
+      },
+      {
+        title: 'Server Management',
+        icon: TbServer,
+      },
+      {
+        title: 'WP Engine',
+        icon: SiWordpress,
+      },
+      {
+        title: 'Hostinger',
+        icon: SiHostinger,
+      },
+      {
+        title: 'Loopia',
+        icon: TbServer,
+      },
+    ],
+  },
+
   {
     category: 'Platforms',
     icon: MdDisplaySettings,
@@ -116,12 +155,20 @@ export const SKILLS_LIST: Skills[] = [
         icon: SiWoocommerce,
       },
       {
-        title: 'LearnDash',
-        icon: null,
-      },
-      {
         title: 'Elementor',
         icon: SiElementor,
+      },
+      {
+        title: 'WP Bakery',
+        icon: BsPlugin,
+      },
+      {
+        title: 'LearnDash',
+        icon: BsPlugin,
+      },
+      {
+        title: 'ACF Plugin',
+        icon: BsPlugin,
       },
     ],
   },
